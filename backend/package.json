@@ -1,0 +1,31 @@
+{
+  "name": "openfinances-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx acts-util-apilib && npx webpack",
+    "dev-server": "nodemon --exec \"npm run build && dotenv -e .env -- node dist/bundle.js\""
+  },
+  "keywords": [],
+  "author": "Amir Czwink",
+  "license": "AGPL-3.0",
+  "devDependencies": {
+    "@types/node": "^26.0.1",
+    "dotenv-cli": "^11.0.0",
+    "nodemon": "^3.1.14",
+    "source-map-loader": "^5.0.0",
+    "ts-loader": "^9.6.2",
+    "webpack": "^5.108.1",
+    "webpack-cli": "^7.1.0"
+  },
+  "dependencies": {
+    "@aczwink/acts-util-apilib": "^1.0.0",
+    "@aczwink/acts-util-core": "^1.0.0",
+    "@aczwink/acts-util-node": "^1.0.0",
+    "@dintero/money": "^1.1.11",
+    "fast-csv": "^5.0.7",
+    "js-yaml": "^5.2.0",
+    "read-excel-file": "^9.2.0"
+  }
+}
